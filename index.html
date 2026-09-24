@@ -11,66 +11,49 @@
 </head>
 <body>
 
-  <!-- Barra Superiore / Header Directory -->
+  <!-- Barra Superiore / Header con la barra interattiva Rosa e Bianca -->
   <header class="top-nav">
     <div class="nav-content">
       <div class="brand-logo">
-        <span class="logo-icon">🟡</span> Dimidium <span>Suites</span>
+        <span class="logo-circle">D</span> Dimidium <span>Suites</span>
       </div>
 
-      <div class="search-bar">
-        <div class="input-group">
-          <span class="icon">🔍</span>
-          <input type="text" value="Affittacamere / Suite" placeholder="Cosa cerchi?">
-        </div>
-        <div class="input-divider"></div>
-        <div class="input-group">
-          <span class="icon">📍</span>
-          <input type="text" value="Palermo" placeholder="Località">
-        </div>
-        <button class="btn-search">Cerca</button>
-      </div>
+      <!-- SBARRA INTERATTIVA STILE RICERCA (BIANCO E ROSA) -->
+      <nav class="capsule-bar">
+        <!-- Riquadro 1: Chi Siamo -->
+        <a href="#chi-siamo" class="capsule-section">
+          <span class="capsule-icon">🏨</span>
+          <div class="capsule-text">
+            <span class="capsule-label">Info</span>
+            <span class="capsule-value">Chi Siamo</span>
+          </div>
+        </a>
 
-      <a href="tel:+393330000000" class="btn-register">Chiama Direttamente</a>
+        <div class="capsule-divider"></div>
+
+        <!-- Riquadro 2: Dove ci Troviamo -->
+        <a href="#dove-siamo" class="capsule-section">
+          <span class="capsule-icon">📍</span>
+          <div class="capsule-text">
+            <span class="capsule-label">Posizione</span>
+            <span class="capsule-value">Dove ci Troviamo</span>
+          </div>
+        </a>
+
+        <!-- Riquadro 3: Prenota Ora (Pulsante Rosa di Chiusura) -->
+        <a href="https://wa.me/393330000000?text=Buongiorno,%20vorrei%20informazioni%20per%20prenotare" target="_blank" class="capsule-btn-booking">
+          <span>📅 Prenota Ora</span>
+        </a>
+      </nav>
+
+      <a href="tel:+393330000000" class="btn-phone-header">📞 Contattaci</a>
     </div>
   </header>
-
-  <!-- BARRA INTERATTIVA A RIQUADRI -->
-  <nav class="interactive-bar-container">
-    <div class="interactive-bar">
-      <!-- Riquadro 1: Prenota Ora -->
-      <a href="#prenota" class="nav-box highlight-box" onclick="apriPrenotazioneRapida(event)">
-        <span class="box-icon">📅</span>
-        <div class="box-text">
-          <span class="box-title">Prenota Ora</span>
-          <span class="box-sub">Miglior tariffa garantita</span>
-        </div>
-      </a>
-
-      <!-- Riquadro 2: Chi Siamo -->
-      <a href="#chi-siamo" class="nav-box">
-        <span class="box-icon">🏨</span>
-        <div class="box-text">
-          <span class="box-title">Chi Siamo</span>
-          <span class="box-sub">Comfort e accoglienza</span>
-        </div>
-      </a>
-
-      <!-- Riquadro 3: Dove ci Troviamo -->
-      <a href="#dove-siamo" class="nav-box">
-        <span class="box-icon">📍</span>
-        <div class="box-text">
-          <span class="box-title">Dove ci Troviamo</span>
-          <span class="box-sub">Nel cuore di Palermo</span>
-        </div>
-      </a>
-    </div>
-  </nav>
 
   <!-- Contenitore Principale -->
   <div class="main-wrapper">
     
-    <!-- Sidebar: Filtri -->
+    <!-- Barra laterale: Filtri -->
     <aside class="sidebar">
       <a href="#dove-siamo" class="btn-map">🗺️ Vedi su mappa</a>
 
@@ -82,34 +65,47 @@
       <div class="filter-section">
         <h3>Servizi</h3>
         <label class="checkbox-container">
-          <input type="checkbox" checked> Connessione Wi-Fi Fibra
+          <input type="checkbox" checked> Wi-Fi Fibra Ultraveloce
         </label>
         <label class="checkbox-container">
-          <input type="checkbox" checked> Aria Condizionata autonoma
+          <input type="checkbox" checked> Climatizzazione Autonoma
         </label>
         <label class="checkbox-container">
-          <input type="checkbox"> Parcheggio convenzionato
+          <input type="checkbox"> Balcone Panoramico
         </label>
         <label class="checkbox-container">
-          <input type="checkbox"> Balcone privato
+          <input type="checkbox"> Bagno Privato in camera
+        </label>
+      </div>
+
+      <div class="filter-section">
+        <h3>Vicino a</h3>
+        <label class="checkbox-container">
+          <input type="checkbox"> Centro Storico
+        </label>
+        <label class="checkbox-container">
+          <input type="checkbox"> Teatro Politeama / Massimo
+        </label>
+        <label class="checkbox-container">
+          <input type="checkbox"> Stazione Centrale
         </label>
       </div>
     </aside>
 
-    <!-- Contenuto Centrale: Risultati -->
+    <!-- Contenuto Centrale -->
     <main class="results-container">
       <div class="results-header">
-        <p>Sistemazioni a Palermo: <strong>2 suite disponibili</strong></p>
+        <p>Soluzioni disponibili a Palermo: <strong>2 suite</strong></p>
         <div class="sort-box">Rilevanza ▾</div>
       </div>
 
-      <!-- Banner Promo -->
+      <!-- Banner Promo Rosa/Scuro -->
       <div class="promo-banner">
         <div class="promo-text">
-          <strong>Prenotazione diretta senza commissioni intermediari!</strong>
-          <p>Scrivici su WhatsApp o chiamaci per bloccare la tua camera al miglior prezzo.</p>
+          <strong>Prenota direttamente e ricevi lo sconto del 10%</strong>
+          <p>Nessun costo di agenzia o intermediazione.</p>
         </div>
-        <a href="tel:+393330000000" class="btn-call-banner">CHIAMA ORA</a>
+        <a href="tel:+393330000000" class="btn-call-banner">CHIAMA SUBITO</a>
       </div>
 
       <!-- Scheda Camera 1 -->
@@ -122,19 +118,19 @@
             <h2>Suite King con Bagno Privato</h2>
             <span class="verified-badge">✓</span>
           </div>
-          <p class="subtitle">Affittacamere di prestigio • Check-in smart</p>
-          <p class="location">📍 Via Roma, Palermo (PA)</p>
+          <p class="subtitle">Affittacamere di pregio • Check-in autonomo</p>
+          <p class="location">📍 Palermo Centro (PA)</p>
           <p class="description">
-            Spaziosa suite matrimoniale elegante, letto king size, TV 50'' e insonorizzazione per il massimo relax.
+            Elegante camera matrimoniale arredata in stile moderno, letto matrimoniale maxi, TV 50'' e set cortesia compreso.
           </p>
           <div class="tags">
             <span>✓ Wi-Fi Fibra</span>
-            <span>✓ Climatizzato</span>
-            <span>✓ Bagno privato</span>
+            <span>✓ Climatizzatore</span>
+            <span>✓ Doccia Relax</span>
           </div>
           <div class="action-buttons">
             <a href="tel:+393330000000" class="btn-phone">📞 Telefono</a>
-            <a href="https://wa.me/393330000000?text=Salve,%20vorrei%20informazioni%20sulla%20Suite%20King" target="_blank" class="btn-chat">💬 WhatsApp</a>
+            <a href="https://wa.me/393330000000?text=Salve,%20vorrei%20disponibilit%C3%A0%20per%20la%20Suite%20King" target="_blank" class="btn-chat">💬 WhatsApp</a>
           </div>
         </div>
       </article>
@@ -146,22 +142,22 @@
         </div>
         <div class="listing-info">
           <div class="title-row">
-            <h2>Camera Deluxe con Balcone</h2>
+            <h2>Camera Deluxe con Terrazzino</h2>
             <span class="verified-badge">✓</span>
           </div>
-          <p class="subtitle">Comfort moderno • Vista Palermo</p>
-          <p class="location">📍 Via Roma, Palermo (PA)</p>
+          <p class="subtitle">Ambiente esclusivo • Massima quiete</p>
+          <p class="location">📍 Palermo Centro (PA)</p>
           <p class="description">
-            Ambiente luminoso con balcone panoramico. Ideale per vacanze o viaggi di lavoro.
+            Dotata di balconcino privato, macchina per caffè espresso e ambiente luminoso ideale per vacanze e lavoro.
           </p>
           <div class="tags">
-            <span>✓ Balcone</span>
+            <span>✓ Terrazzino</span>
             <span>✓ Macchina Caffè</span>
-            <span>✓ Set cortesia</span>
+            <span>✓ Frigo bar</span>
           </div>
           <div class="action-buttons">
             <a href="tel:+393330000000" class="btn-phone">📞 Telefono</a>
-            <a href="https://wa.me/393330000000?text=Salve,%20vorrei%20informazioni%20sulla%20Camera%20Deluxe" target="_blank" class="btn-chat">💬 WhatsApp</a>
+            <a href="https://wa.me/393330000000?text=Salve,%20vorrei%20disponibilit%C3%A0%20per%20la%20Camera%20Deluxe" target="_blank" class="btn-chat">💬 WhatsApp</a>
           </div>
         </div>
       </article>
@@ -170,8 +166,7 @@
       <section id="chi-siamo" class="info-section">
         <h3>🏨 Chi Siamo - Dimidium Suites</h3>
         <p>
-          Dimidium Suites nasce per offrire un'esperienza di soggiorno raffinata nel centro di Palermo. 
-          Uniamo l'indipendenza di una suite moderna con la calorosa ospitalità siciliana, mettendo a disposizione ambienti curati in ogni dettaglio, pulizia impeccabile e massima tranquillità.
+          Dimidium Suites unisce la comodità di un alloggio moderno con l'accoglienza calorosa di Palermo. Ambienti puliti, finiture di pregio e un'assistenza costante durante il tuo soggiorno.
         </p>
       </section>
 
@@ -179,10 +174,10 @@
       <section id="dove-siamo" class="info-section">
         <h3>📍 Dove ci Troviamo</h3>
         <p>
-          Ci troviamo in posizione strategica a Palermo, a pochi minuti a piedi dai principali punti di interesse, ristoranti tipici e collegamenti con stazione e mezzi pubblici.
+          La nostra struttura è situata a Palermo, a breve distanza dai principali monumenti storici, ristoranti e collegamenti per l'aeroporto e la stazione.
         </p>
         <div class="map-placeholder">
-          <span>🗺️ Palermo Centro - Via Roma (Mappa interattiva integrabile)</span>
+          <span>🗺️ Posizione: Palermo Centro Storico</span>
         </div>
       </section>
 
@@ -190,16 +185,8 @@
   </div>
 
   <footer class="footer">
-    <p>&copy; 2026 Dimidium Suites Palermo. Tutti i diritti riservati.</p>
+    <p>&copy; 2026 Dimidium Suites Palermo.</p>
   </footer>
 
-  <script>
-    function apriPrenotazioneRapida(e) {
-      e.preventDefault();
-      const num = "393330000000"; // Sostituisci con il tuo numero
-      const msg = encodeURIComponent("Buongiorno, desidero richiedere disponibilità e prezzi per soggiornare presso Dimidium Suites.");
-      window.open(`https://wa.me/${num}?text=${msg}`, '_blank');
-    }
-  </script>
 </body>
 </html>
