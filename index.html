@@ -3,11 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mio Sito Web</title>
+  <title>Dimidium Suites - Affittacamere</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Ciao, benvenuto sul mio sito!</h1>
-  <p>Questo sito è ospitato gratuitamente.</p>
+
+  <!-- Header & Navigazione -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="logo">Dimidium Suites</a>
+      <nav class="nav-links">
+        <a href="#about">Chi Siamo</a>
+        <a href="#camere">Camere</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#contatti" class="btn-nav">Prenota Ora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Il tuo soggiorno ideale all'insegna del relax</h1>
+      <p>Camere eleganti, comfort moderni e un'accoglienza calorosa per la tua vacanza o viaggio di lavoro.</p>
+      <div class="hero-buttons">
+        <a href="#camere" class="btn-primary">Scopri le Camere</a>
+        <!-- Sostituisci il numero 393330000000 con il tuo vero numero -->
+        <a href="https://wa.me/393330000000?text=Buongiorno,%20vorrei%20informazioni%20sulla%20disponibilit%C3%A0" target="_blank" class="btn-whatsapp">Contatta su WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chi Siamo -->
+  <section id="about" class="section">
+    <div class="container text-center">
+      <h2>Benvenuti a Dimidium Suites</h2>
+      <p class="section-desc">Situato in una posizione tranquilla e strategica, il nostro affittacamere offre ambienti finemente arredati per garantirti un soggiorno piacevole e rigenerante.</p>
+    </div>
+  </section>
+
+  <!-- Le Camere -->
+  <section id="camere" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center">Le Nostre Camere</h2>
+      <p class="section-desc text-center">Spazi luminosi progettati per il massimo del comfort.</p>
+
+      <div class="cards-grid">
+        <!-- Camera 1 -->
+        <div class="card">
+          <div class="card-img-placeholder">Camera Deluxe</div>
+          <div class="card-body">
+            <h3>Camera Matrimoniale Deluxe</h3>
+            <p>Spaziosa e raffinata, perfetta per coppie in cerca di tranquillità e benessere.</p>
+            <ul class="room-features">
+              <li>Letto matrimoniale King Size</li>
+              <li>Bagno privato con doccia idromassaggio</li>
+              <li>Wi-Fi veloce & Smart TV</li>
+              <li>Climatizzazione autonoma</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">da 75€ / notte</span>
+              <a href="#contatti" class="btn-outline">Info & Disponibilità</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Camera 2 -->
+        <div class="card">
+          <div class="card-img-placeholder">Suite Vista</div>
+          <div class="card-body">
+            <h3>Junior Suite</h3>
+            <p>Elegante suite con area salotto, ideale per soggiorni più lunghi o famiglie con bambini.</p>
+            <ul class="room-features">
+              <li>Letto matrimoniale + divano letto</li>
+              <li>Bagno privato con set di cortesia</li>
+              <li>Balcone panoramico</li>
+              <li>Macchina del caffè & Minibar</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price">da 95€ / notte</span>
+              <a href="#contatti" class="btn-outline">Info & Disponibilità</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servizi -->
+  <section id="servizi" class="section">
+    <div class="container">
+      <h2 class="text-center">I Nostri Servizi</h2>
+      <div class="services-grid">
+        <div class="service-box">
+          <div class="service-icon">📶</div>
+          <h4>Wi-Fi Gratuito</h4>
+          <p>Connessione in fibra ad alta velocità in tutta la struttura.</p>
+        </div>
+        <div class="service-box">
+          <div class="service-icon">❄️</div>
+          <h4>Aria Condizionata</h4>
+          <p>Controllo individuale del riscaldamento e climatizzazione.</p>
+        </div>
+        <div class="service-box">
+          <div class="service-icon">☕</div>
+          <h4>Area Caffè & Tè</h4>
+          <p>Bevande calde disponibili gratuitamente durante il soggiorno.</p>
+        </div>
+        <div class="service-box">
+          <div class="service-icon">🧹</div>
+          <h4>Pulizia Giornaliera</h4>
+          <p>Igiene impeccabile e cambio biancheria regolare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatti & Dove Siamo -->
+  <section id="contatti" class="section bg-light">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <h2>Richiedi la tua Prenotazione</h2>
+        <p>Prenota direttamente con noi per ottenere la <strong>miglior tariffa garantita</strong> senza commissioni aggiuntive.</p>
+        
+        <div class="contact-item">
+          <strong>📍 Indirizzo:</strong>
+          <span>Via Esempio 123, Città</span>
+        </div>
+        <div class="contact-item">
+          <strong>📞 Telefono:</strong>
+          <a href="tel:+393330000000">+39 333 000 0000</a>
+        </div>
+        <div class="contact-item">
+          <strong>✉️ Email:</strong>
+          <a href="mailto:info@dimidiumsuites.it">info@dimidiumsuites.it</a>
+        </div>
+      </div>
+
+      <!-- Box Prenotazione Diretta -->
+      <div class="booking-box">
+        <h3>Contatto Rapido</h3>
+        <p>Scrivici subito su WhatsApp indicando le date desiderate e il numero di ospiti:</p>
+        <a href="https://wa.me/393330000000?text=Salve,%20vorrei%20chiedere%20la%20disponibilit%C3%A0%20per%20la%20camera" target="_blank" class="btn-whatsapp-large">
+          💬 Scrivici su WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Dimidium Suites. Tutti i diritti riservati.</p>
+  </footer>
+
 </body>
 </html>
