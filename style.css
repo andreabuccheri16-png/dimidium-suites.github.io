@@ -1,301 +1,404 @@
-/* Reset e basi generali */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #333;
-  line-height: 1.6;
-  background-color: #fff;
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  color: #1a2530;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.section {
-  padding: 80px 0;
-}
-
-.section-desc {
-  max-width: 600px;
-  margin: 15px auto 40px auto;
-  color: #666;
-}
-
-.bg-light {
-  background-color: #f9fafb;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #12151a;
+  color: #d1d5db;
+  line-height: 1.5;
 }
 
 /* Header */
-.header {
-  position: sticky;
-  top: 0;
-  background: #ffffff;
-  border-bottom: 1px solid #eaeaea;
-  z-index: 100;
-  padding: 15px 0;
+.top-nav {
+  background-color: #171b22;
+  border-bottom: 1px solid #232936;
+  padding: 14px 24px;
 }
 
-.nav-container {
-  max-width: 1100px;
+.nav-content {
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
+.brand-logo {
+  font-size: 1.3rem;
   font-weight: 700;
-  color: #1a2530;
-  text-decoration: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #4a5568;
-  margin-left: 20px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: color 0.2s;
-}
-
-.nav-links a:hover {
-  color: #c59b27;
-}
-
-.nav-links .btn-nav {
-  background-color: #1a2530;
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 6px;
-}
-
-/* Hero */
-.hero {
-  background: linear-gradient(rgba(26, 37, 48, 0.75), rgba(26, 37, 48, 0.75)), #4a5568;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 30px auto;
-  color: #e2e8f0;
-}
-
-.hero-buttons a {
-  display: inline-block;
-  margin: 8px;
-  padding: 14px 28px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.btn-primary {
-  background-color: #c59b27;
   color: #fff;
 }
 
-.btn-whatsapp {
-  background-color: #25d366;
-  color: #fff;
+.brand-logo span {
+  color: #f59e0b;
 }
 
-/* Schede Camere */
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.card {
-  background: #fff;
-  border-radius: 12px;
+.search-bar {
+  display: flex;
+  background-color: #0b0e14;
+  border: 1px solid #323b4b;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-  border: 1px solid #edf2f7;
+  flex: 1;
+  max-width: 650px;
 }
 
-.card-img-placeholder {
-  height: 200px;
-  background: #cbd5e1;
+.search-bar .input-group {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #475569;
-  font-size: 1.2rem;
+  padding: 6px 12px;
+  flex: 1;
 }
 
-.card-body {
-  padding: 25px;
-}
-
-.card-body h3 {
-  margin-bottom: 10px;
-}
-
-.room-features {
-  list-style: none;
-  margin: 20px 0;
-  padding: 0;
-}
-
-.room-features li {
+.search-bar .icon {
   font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-}
-
-.room-features li::before {
-  content: "✓";
-  color: #c59b27;
-  font-weight: bold;
   margin-right: 8px;
 }
 
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #edf2f7;
-  padding-top: 15px;
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.95rem;
+  width: 100%;
 }
 
-.price {
-  font-size: 1.1rem;
+.input-divider {
+  width: 1px;
+  background-color: #232936;
+}
+
+.btn-search {
+  background-color: #f59e0b;
+  color: #000;
+  border: none;
+  padding: 0 20px;
   font-weight: 700;
-  color: #1a2530;
+  cursor: pointer;
 }
 
-.btn-outline {
-  border: 1px solid #1a2530;
-  color: #1a2530;
-  padding: 6px 14px;
+.btn-register {
+  color: #93c5fd;
   text-decoration: none;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid #3b82f6;
+  padding: 8px 14px;
+  border-radius: 6px;
 }
 
-/* Servizi */
-.services-grid {
+/* BARRA INTERATTIVA A RIQUADRI */
+.interactive-bar-container {
+  background-color: #171b22;
+  border-bottom: 2px solid #232936;
+  padding: 12px 24px;
+}
+
+.interactive-bar {
+  max-width: 1400px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
-.service-box {
-  text-align: center;
-  padding: 30px 20px;
-  border-radius: 10px;
-  background: #fff;
-  border: 1px solid #f1f5f9;
-}
-
-.service-icon {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-}
-
-/* Contatti & Prenotazioni */
-.contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+.nav-box {
+  display: flex;
   align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background-color: #1e2532;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-.contact-item {
-  margin-bottom: 15px;
+.nav-box:hover {
+  background-color: #263042;
+  border-color: #f59e0b;
+  transform: translateY(-2px);
+}
+
+.box-icon {
+  font-size: 1.5rem;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-title {
+  color: #fff;
+  font-weight: 700;
   font-size: 1rem;
 }
 
-.contact-item strong {
-  display: block;
-  color: #1a2530;
+.box-sub {
+  color: #94a3b8;
+  font-size: 0.8rem;
 }
 
-.contact-item a {
-  color: #c59b27;
+/* Evidenziazione riquadro Prenota */
+.highlight-box {
+  background-color: #222c3c;
+  border-color: #f59e0b;
+}
+
+.highlight-box .box-title {
+  color: #f59e0b;
+}
+
+/* Layout Principale */
+.main-wrapper {
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #171b22;
+  border: 1px solid #232936;
+  border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
+}
+
+.btn-map {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #93c5fd;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-bottom: 20px;
   text-decoration: none;
 }
 
-.booking-box {
-  background: #fff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-  text-align: center;
+.filter-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #232936;
+  margin-bottom: 20px;
 }
 
-.booking-box h3 {
-  margin-bottom: 15px;
-}
-
-.btn-whatsapp-large {
-  display: block;
-  background-color: #25d366;
+.filter-section h3 {
+  font-size: 0.95rem;
   color: #fff;
-  text-decoration: none;
-  padding: 16px;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  margin-top: 20px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
-/* Footer */
-.footer {
-  background-color: #1a2530;
-  color: #a0aec0;
-  text-align: center;
-  padding: 30px;
+.checkbox-container {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Schede Camere */
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.sort-box {
+  background-color: #1e293b;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.promo-banner {
+  background: linear-gradient(90deg, #1e2532 0%, #293548 100%);
+  border: 1px solid #374151;
+  border-radius: 10px;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.btn-call-banner {
+  background-color: #f59e0b;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 6px;
   font-size: 0.9rem;
 }
 
-/* Responsive per smartphone */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .contact-container {
+.listing-card {
+  background-color: #171b22;
+  border: 1px solid #232936;
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.listing-img {
+  width: 320px;
+  min-width: 320px;
+}
+
+.img-preview {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+.listing-info {
+  padding: 22px;
+  flex: 1;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title-row h2 {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.verified-badge {
+  background-color: #f59e0b;
+  color: #000;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.location {
+  color: #60a5fa;
+  font-size: 0.9rem;
+  margin: 6px 0;
+}
+
+.description {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.tags {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+  color: #34d399;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-phone {
+  background-color: #f59e0b;
+  color: #000;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-chat {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Sezioni di approfondimento Chi Siamo & Dove Siamo */
+.info-section {
+  background-color: #171b22;
+  border: 1px solid #232936;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 25px;
+}
+
+.info-section h3 {
+  color: #fff;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.info-section p {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.map-placeholder {
+  background-color: #1e293b;
+  border: 1px dashed #3b4556;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 15px;
+  color: #93c5fd;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #171b22;
+  border-top: 1px solid #232936;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 40px;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+  .interactive-bar {
     grid-template-columns: 1fr;
+  }
+  .main-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .listing-card {
+    flex-direction: column;
+  }
+  .listing-img {
+    width: 100%;
+    height: 200px;
   }
 }
